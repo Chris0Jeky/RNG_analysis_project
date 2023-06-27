@@ -1,8 +1,12 @@
 import numpy as np
 
+from RNG_analysis.validation import *
+
+
 def generate_random_numbers(n):
-    # generate n random numbers
-    return np.random.random(n)
+    if validate_positive_integer(n):
+        # generate n random numbers
+        return np.random.random(n)
 
 def main():
     # main function to interact with module

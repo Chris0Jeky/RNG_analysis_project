@@ -1,6 +1,7 @@
 def validate_positive_integer(value):
     if not isinstance(value, int) or value <= 0:
         raise ValueError(f"Expected a positive integer, but received: {value}")
+    else: return True
 
 def validate_range(min_value, max_value):
     if not (isinstance(min_value, (int, float)) and isinstance(max_value, (int, float))):
