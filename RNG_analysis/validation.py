@@ -1,4 +1,4 @@
-def validation_positive_integer(value):
+def validate_positive_integer(value):
     if not isinstance(value, int) or value <= 0:
         raise ValueError(f"Expected a positive integer, but received: {value}")
 
