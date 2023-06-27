@@ -14,12 +14,19 @@ Follow these steps to set up your project:
 Environment Setup
 
 Clone the Repository: Run git clone <repository-url> in your terminal to clone this repository to your local machine.
-Create a Virtual Environment: Navigate into the cloned project directory. Run python3 -m venv env to create a new virtual environment. Once the virtual environment is created, activate it using source env/bin/activate (on Unix or MacOS) or .\env\Scripts\activate (on Windows).
+Create a Virtual Environment: Navigate into the cloned project directory. Run py -m venv env to create a new virtual environment. Once the virtual environment is created, activate it using source env/bin/activate (on Unix or MacOS) or .\env\Scripts\activate (on Windows).
 Install Required Libraries
 
 Run pip install -r requirements.txt to install the required libraries. This includes pandas, numpy, and any other libraries that will be used in the project.
 Usage
 Once the environment is set up and the required libraries are installed, you can run the main script, main.py, to execute the mathematical operations and generate the visualizations.
+
+To run tests with PyTest, run this poweshell command:
+$env:PYTHONPATH = "${env:PYTHONPATH};C:\path_to_local_project\rng_analysis_project"
+Then you can run command "pytest" from anywhere from within the project directory
+For linux users: 
+export PYTHONPATH="${PYTHONPATH}:C:\path_to_local_project\rng_analysis_project"
+
 
 Contributing
 Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change. Please ensure to update tests as appropriate.
