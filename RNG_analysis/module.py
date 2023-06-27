@@ -1,6 +1,7 @@
 import numpy as np
 
 from RNG_analysis.validation import *
+from RNG_analysis.categorizer import *
 
 
 def generate_random_numbers(n):
