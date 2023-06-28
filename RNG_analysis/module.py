@@ -11,6 +11,11 @@ def generate_random_numbers(n):
         # generate n random numbers
         return np.random.random(n)
 
+def generate_random_numbers_given_range(n, min_value, max_value):
+    if validate_range(min_value, max_value):
+        # generate n random numbers within range
+        return np.random.uniform(min_value, max_value, n)
+
 def main():
     # main function to interact with module
     n = int(input("Enter the number of random numbers to generate: "))
